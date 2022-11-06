@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+      <div class="box">
+        <h1>BMI Calculator</h1><br>
+        <label for="weight"> Weight (kg) </label>
+        <input type="number" id="weight"><br><span id="weight_error"></span>
+        <label for="height"> Height (cm) </label>
+        <input type="number" id="height"><br><span id="height_error"></span>
+        <button onclick='calculateBMI()'> CALCULATE </button>
+        <button onclick='reload()'> CLEAR </button>
+      
+        <h4 style="text-align: center" id="heading"></h4>
+        <p style="text-align: center" id=bmi-output></p>
+        <p style="text-align: center" id="message"></p>
+       </div>
+
+       <div class = 'intro'>
+         <h1>Body Mass Index (BMI) Calculator</h1>
+         <p style="text-align: justify"> How to calculate Body Mass Index
+          Body Mass Index is a simple calculation using a person's height and weight. The formula is BMI = kg/m2 where kg is a person’s weight in kilograms and m2 is their height in metres squared.
+          <br> A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. BMI applies to most adults 18-65 years.<br><img src="image2.png" alt="chart"></p>
+  
+        </div>
+    </body>
+</html>
